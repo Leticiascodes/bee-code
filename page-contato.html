@@ -1,0 +1,329 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<section id="content" role="main" class="container contato">
+    <article id="post-static" class="post">
+        <section class="entry-content">
+            <div class="containerContato col-md-10 col-md-offset-1">
+                <form name="formContato" id="formContato" class="col-md-10 col-md-offset-1">
+                    <input type="hidden" name="pagiorigem" id="pagiorigem" value="">
+
+                    <div class="row">
+                        <label class="col-md-3 col-sm-12 col-xs-12">Nome* </label>
+                        <input class="ipt col-md-9 col-sm-12 col-xs-12" name="nome" id="nome" type="text" placeholder="" required="">
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-3">E-mail* </label>
+                        <input class="ipt col-md-9" name="email" id="email" type="email" placeholder="" required="">
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-3">Celular* </label>
+                        <input class="ipt col-md-9" name="celular" id="celular" type="text" placeholder="" required="">
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-3">Destino* </label>
+                        <select name="destino" id="destino" class="selectpicker col-md-9">
+                            <option hidden disabled selected value></option>
+                            <option value="África do Sul">África do Sul</option>
+                            <option value="Austrália">Austrália</option>
+                            <option value="Alemanha">Alemanha</option>
+                            <option value="Canadá">Canadá</option>
+                            <option value="Coreia do Sul">Coreia do Sul</option>
+                            <option value="China">China</option>
+                            <option value="Espanha">Espanha</option>
+                            <option value="Escócia">Escócia</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="França">França</option>
+                            <option value="Inglaterra">Inglaterra</option>
+                            <option value="Irlanda">Irlanda</option>
+                            <option value="Irlanda do Norte">Irlanda do Norte</option>
+                            <option value="Itália">Itália</option>
+                            <option value="Japão">Japão</option>
+                            <option value="Nova Zelândia">Nova Zelândia</option>
+                            <option value="Malta">Malta</option>
+                            <option value="México">México</option>
+                            <option value="País de Gales">País de Gales</option>
+                            <option value="Quero outro destino">Quero outro país</option>
+                            <option value="Indefinido">Ainda não decidi</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-3">Sua Região* </label>
+                        <select class="selectpicker col-md-9" name="unidade" id="unidade" required>
+                            <option hidden disabled selected value></option>
+                            <option value="1|paulista">São Paulo - Av. Paulista e região</option>
+                            <option value="1|centro">São Paulo - Região Centro</option>
+                            <option value="1|zonasul">São Paulo - Zona Sul</option>
+                            <option value="1|morumbi-panamby">São Paulo - Morumbi-Panamby</option>
+                            <option value="1|zonaoeste">São Paulo - Zona Oeste</option>
+                            <option value="2|zonaleste">São Paulo - Zona Leste</option>
+                            <option value="2|zonanorte">São Paulo - Zona Norte</option>
+                            <option value="1|abcpaulista">ABC Paulista</option>
+                            <option value="2|guarulhos">Guarulhos e região</option>
+                            <option value="5|litoral-paulista">Litoral Paulista</option>
+                            <option value="3|jundiai-campinas">Jundiaí Campinas</option>
+                            <option value="2|interior">Interior de São Paulo</option>
+                            <option value="1|barueri">Barueri e região</option>
+                            <option value="1|osasco">Osasco e região</option>
+                            <option value="4|parana">Paraná</option>
+                            <option value="1|rio">Rio de Janeiro</option>
+                            <option value="1|minasgerais">Minas Gerais</option>
+                            <option value="1|espiritosanto">Espírito Santo</option>
+                            <option value="1|centro-oeste">Centro-Oeste Brasil</option>
+                            <option value="1|sul">Sul do Brasil</option>
+                            <option value="1|norte-nordeste">Norte-Nordeste Brasil</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-4">Conta pra gente*</label>
+                        <select name="intencao-de-compra" id="intencao-de-compra" class="selectpicker col-md-8" required>
+                            <option hidden disabled selected value></option>
+                            <option value="Começou pesquisar agora">Comecei pesquisar agora, não sei como é</option>
+                            <option value="Já pesquisa, porém dúvidas">Já pesquiso, mas tenho dúvidas</option>
+                            <option value="Certeza que vai">Decidi que estou pronto para o intercâmbio</option>
+                        </select>
+                    </div>
+
+                    <div class="formExtra">
+                        <div class="row">
+                            <label class="col-md-4">Como Conheceu*</label>
+                            <select name="comoConheceu" id="comoConheceu" class="selectpicker col-md-8" required>
+                                <option hidden disabled selected value></option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Pesquisa Google">Sites no Google</option>
+                                <option value="Google Review">Google Review</option>
+                                <option value="Digital Influencer">Digital Influencer</option>
+                                <option value="@Mialvess">Foi com Mi Alves!</option>
+                                <option value="Belta">Associação Belta</option>
+                                <option value="Youtube">Youtube</option>
+                                <option value="Eurodicas">Eurodicas</option>
+                                <option value="Tiktok">Tiktok</option>
+                                <option value="Indicação">Indicação de amigos</option>
+                                <option value="Não lembro">Não lembro</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label class="col-md-4">Data de Nascimento </label>
+                            <input class="ipt col-md-8" name="dataNasc" id="dataNasc" type="text" placeholder="">
+                        </div>
+
+                        <div class="row">
+                            <label class="col-md-4">Tipo de programa </label>
+                            <select name="tipoProg" id="tipoProg" class="selectpicker col-md-8">
+                                <option hidden disabled selected value></option>
+                                <option value="Idiomas Regulares">Idiomas Regulares</option>
+                                <option value="Idioma + Foco">Idioma + Foco</option>
+                                <option value="Idioma + Esporte">Idioma + Esporte</option>
+                                <option value="Idioma para adultos">Idioma para adultos</option>
+                                <option value="Proficiência">Proficiência</option>
+                                <option value="Intercâmbio em Família">Intercâmbio em Família</option>
+                                <option value="Profissionalizante e Co-op">Profissionalizante e Co-op</option>
+                                <option value="Graduação">Graduação</option>
+                                <option value="Pós-Graduação">Pós-Graduação</option>
+                                <option value="Ensino Médio no Exterior">Ensino Médio no Exterior</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label class="col-md-3">Idioma </label>
+                            <select name="idioma" id="idioma" class="selectpicker  col-md-9">
+                                <option hidden disabled selected value></option>
+                                <option value="Inglês">Inglês</option>
+                                <option value="Francês">Francês</option>
+                                <option value="Espanhol">Espanhol</option>
+                                <option value="Italiano">Italiano</option>
+                                <option value="Alemão">Alemão</option>
+                                <option value="Japonês">Japonês</option>
+                                <option value="Coreano">Coreano</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label class="col-md-3">Duração </label>
+                            <select name="periodo" id="periodo" class=" selectpicker col-md-9">
+                                <option hidden disabled selected value></option>
+                                <option value="Até 1 mês">Até 1 mês</option>
+                                <option value="Até 3 meses">Até 3 meses</option>
+                                <option value="Até 6 meses">Até 6 meses</option>
+                                <option value="Mais de 6 meses">Mais de 6 meses</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label class="col-md-3">Embarque </label>
+                            <select name="data" id="data" class="selectpicker col-md-9">
+                                <option hidden disabled selected value></option>
+                                <option value="em até 3 meses">Em até 3 meses</option>
+                                <option value="em 3 a 6 meses">De 3 a 6 meses</option>
+                                <option value="mais de 6 meses">Vou viajar daqui 6 meses ou mais</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label class="col-md-4">Sua Prioridade é</label>
+                            <select name="objetivo" id="objetivo" class="selectpicker col-md-8">
+                                <option hidden disabled selected value></option>
+                                <option value="Melhor escola">Melhor escola</option>
+                                <option value="Baixo investimento">Baixo investimento</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label class="col-md-5" style="line-height: 23px;">Deseja trabalhar lá? <br><small style="font-size: 12px;">(14 semanas mínimo)</small></label>
+                            <select name="intencao-de-trabalho" id="intencao-de-trabalho" class="selectpicker col-md-7">
+                                <option hidden disabled selected value></option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                                <option value="Talvez, mas não é prioridade">Talvez, mas não é prioridade</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <button class="btEnviar botao-amarelo" name="btEnviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+    </article>
+</section>
+
+<script type="text/javascript">
+    // Replaced PHP logic with pure JS. 
+    // It will check if there is a 'c' parameter in the URL; otherwise, it uses the referrer.
+    var urlParams = new URLSearchParams(window.location.search);
+    var promo = urlParams.get('c');
+    var pagiorigem = (promo && promo !== "") ? "Promoção: " + promo : document.referrer;
+    
+    document.getElementById('pagiorigem').value = pagiorigem;
+
+    jQuery(document).ready(function() {
+        jQuery('.formExtra').hide();
+        var SPMaskBehavior = function(val) {
+                return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+            },
+            spOptions = {
+                onKeyPress: function(val, e, field, options) {
+                    field.mask(SPMaskBehavior.apply({}, arguments), options);
+                }
+            };
+
+        jQuery('#celular').mask(SPMaskBehavior, spOptions);
+        jQuery('#dataNasc').mask('00/00/0000');
+
+        jQuery('#intencao-de-compra').change(function() {
+            jQuery(".formExtra").show();
+        });
+    });
+
+    var formContatoSend = false;
+
+    jQuery('#formContato').submit(function(event) {
+        event.preventDefault();
+
+        if (formContatoSend) return;
+        formContatoSend = true;
+
+        var dataNasc = jQuery('#dataNasc').val();
+        var dataNascT = '';
+        if (dataNasc && dataNasc.length > 2) {
+            var dateAr = dataNasc.split('/');
+            dataNascT = dateAr[2] + '-' + dateAr[1] + '-' + dateAr[0] + 'T00:00:00.000Z';
+        }
+
+        var destino = jQuery('#destino').val();
+        var programa = jQuery('#tipoProg').val();
+        var idioma = jQuery('#idioma').val();
+        var periodo = jQuery('#periodo').val();
+        var data = jQuery('#data').val();
+        var objetivo = jQuery('#objetivo').val();
+        var origem = jQuery('#comoConheceu').val();
+        var compra = jQuery('#intencao-de-compra').val();
+        var trabalho = jQuery('#intencao-de-trabalho').val();
+        var urlorigem = jQuery('#pagiorigem').val();
+
+        var nomeUnidade = jQuery('#unidade option:selected').text();
+        var valUnidade = jQuery('#unidade').val().split('|');
+        var unidadeId = valUnidade[0];
+        var urlUnidade = valUnidade[1];
+
+        var finalUnidadeCode;
+        if (unidadeId == '1') {
+            finalUnidadeCode = '2729';
+        } else if (unidadeId == '2') {
+            finalUnidadeCode = '4160';
+        } else if (unidadeId == '3') {
+            finalUnidadeCode = '4416';
+        } else if (unidadeId == '5') {
+            finalUnidadeCode = '4561';
+        } else {
+            finalUnidadeCode = '4202';
+        }
+
+        var formData = {
+            'agencyId': 2729,
+            'firstname': jQuery('#nome').val(),
+            'phone': jQuery('#celular').val(),
+            'email': jQuery('#email').val(),
+            'address': nomeUnidade,
+            'notes': 'Duração: ' + (periodo || '') + ' | Embarque: ' + (data || '') + ' |  ',
+            'customPropertyValues': [
+                { 'customPropertyFieldId': 'origem', 'customOptionSelections': [origem] },
+                { 'customPropertyFieldId': 'primeira-opcao-de-destino', 'customOptionSelections': [destino] },
+                { 'customPropertyFieldId': 'idioma', 'customOptionSelections': [idioma] },
+                { 'customPropertyFieldId': 'pretensao-de-periodo', 'customOptionSelections': [periodo] },
+                { 'customPropertyFieldId': 'pretensao-de-embarque', 'customOptionSelections': [data] },
+                { 'customPropertyFieldId': 'qualidade-x-investimento', 'customOptionSelections': [objetivo] },
+                { 'customPropertyFieldId': 'forma-de-contato', 'customOptionSelections': ["Website"] },
+                { 'customPropertyFieldId': 'tipo-de-programa', 'customOptionSelections': [programa] },
+                { 'customPropertyFieldId': 'intencao-de-trabalho', 'customOptionSelections': [trabalho] },
+                { 'customPropertyFieldId': 'intencao-de-compra', 'customOptionSelections': [compra] },
+                { 'customPropertyFieldId': 'url', 'value': urlorigem }
+            ].filter(function(item) {
+                if (item.value && typeof item.value === 'string' && item.value.trim() !== '') return true;
+                if (item.customOptionSelections && Array.isArray(item.customOptionSelections) && typeof item.customOptionSelections[0] === 'string' && item.customOptionSelections[0].trim() !== '') return true;
+                return false;
+            }),
+        };
+
+        if (dataNascT) formData.birthdate = dataNascT;
+
+        var formMail = {
+            msg: 'Nome: ' + jQuery('#nome').val() + '<br>Celular: ' + jQuery('#celular').val(),
+            user_mail: jQuery('#email').val(),
+            nome: jQuery('#nome').val(),
+            email: jQuery('#email').val(),
+            celular: jQuery('#celular').val(),
+            destino: destino,
+            comoConheceu: origem,
+            send_internal: '1'
+        };
+
+        jQuery.ajax({
+            url: 'edvisor.php',
+            data: { dados: JSON.stringify(formData), unidade: finalUnidadeCode },
+            type: 'POST'
+        }).always(function() {
+            // jQuery.post("action.php", formMail)
+            //     .done(function() {
+            //         window.location.href = "https://beeducation.tur.br/form-enviado-" + urlUnidade;
+            //     })
+            //     .fail(function() {
+            //         formContatoSend = false;
+            //         alert('Erro ao enviar o formulário.');
+            //     });
+        });
+    });
+
+    jQuery.noConflict();
+</script>
