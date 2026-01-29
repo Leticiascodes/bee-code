@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 header('Content-Type: application/json; charset=utf-8');
 
-$apiKey = $_SERVER['EDVISOR_API_KEY'];
+$apiKey = $getenv('EDVISOR_API_KEY');
 $input['agencyId'] = 2729;
 $url = 'https://api-v2.edvisor.io/graphql';
 
