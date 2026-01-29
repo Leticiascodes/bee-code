@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 header('Content-Type: application/json; charset=utf-8');
 
 $apiKey = "";
+$input['agencyId'] = 2729;
 $url = 'https://api-v2.edvisor.io/graphql';
 
 $raw = $_POST['dados'] ?? '';
@@ -31,15 +32,10 @@ mutation CreateStudent(\$input: StudentInput!) {
 GQL;
 
 $payload = json_encode([
-  'query' => $query,
-  'variables' => [
-    'input' => [
-      'agencyId'  => $input['agencyId'],
-      'firstname' => $input['firstname'],
-      'email'     => $input['email'],
-      'phone'     => $input['phone']
+    'query' => $query,
+    'variables' => [
+        'input' => $input
     ]
-  ]
 ]);
 
 $ch = curl_init();
